@@ -11,8 +11,14 @@ app.get('/', (req, res) => {
 });
 
 // Importar rotas
-// const userRoutes = require('./src/routes/userRoutes');
+// Antes (exemplo):
+// const userRoutes = require('./src/routes/UserRoutes');
+
+// Depois:
+const receitaRoutes = require('./src/routes/ReceitaRoutes');
 // app.use('/users', userRoutes);
+
+app.use('/receitas', receitaRoutes);
 
 app.listen(port, () => {
   console.log(`Servidor rodando na porta ${port}`);
