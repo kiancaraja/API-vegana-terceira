@@ -1,5 +1,5 @@
-const express = require('express');
-const router = express.Router();
+import { Router } from 'express';
+const router = Router();
 
 // -----------------------------------------------------------------
 // PASSO 1: DEFINIR OS DADOS (O ARRAY QUE FALTAVA)
@@ -110,6 +110,6 @@ router.delete('/:id', (req, res) => {
   }
 });
 
-module.exports = router;
+export default router;
 
 // testando

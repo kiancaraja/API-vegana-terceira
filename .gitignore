@@ -1,0 +1,6 @@
+.env
+# Ignora a pasta de dependências
+node_modules
+
+# Ignora o arquivo de senhas
+.env
